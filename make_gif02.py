@@ -60,8 +60,8 @@ if not det_files:
 print(f"📁 Найдено кадров: {len(det_files)}")
 
 # === УМЕНЬШАЕМ РАЗМЕР ДЛЯ GIF (чтобы уложиться в 100 МБ лимит GitHub) ===
-MAX_WIDTH = 1280
-MAX_HEIGHT = 720
+MAX_WIDTH = 640
+MAX_HEIGHT = 360
 
 first_frame_path = det_files[0].replace("det_", "").replace(".pt", ".png")
 first_img = Image.open(first_frame_path)
